@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Gophercises Ep. 13!</title>
+  </head>
+  <body>
+    <h1>Quiet HackerNews</h1>
+    <ol>
+    {{ range . }}
+    <li><a href="{{ .Url }}"><h4>{{ .Title }}</h4></a></li>
+    <p>{{ .Author }}</p>
+    {{ end }}
+    </ol>
+  </body>
+  </head>
+</html>
